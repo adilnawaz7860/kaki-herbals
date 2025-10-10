@@ -29,7 +29,7 @@ export const WhyChooseSection = ({ cards }: WhyChooseSectionProps) => {
             >
               <div className="flex items-center justify-start gap-2">
                  {card.icon && (
-                <div className="text-green-600 hover:shadow-xl border border-gray-200 rounded-md p-1 mb-4">{card.icon}</div>
+                <div className="text-primary hover:shadow-xl border border-gray-200 rounded-md p-1 mb-4">{card.icon}</div>
               )}
               <h3 className="text-lg text-gray-800 font-semibold mb-2">{card.title}</h3>
               </div>

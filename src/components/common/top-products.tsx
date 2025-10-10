@@ -101,7 +101,7 @@ export default function ProductPage() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-4xl font-bold text-green-800 mb-4">
+          <h2 className="text-4xl font-bold text-primary mb-4">
             Our Herbal Products
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">

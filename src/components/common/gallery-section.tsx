@@ -115,7 +115,7 @@ const [selectedImage, setSelectedImage] = useState<Product | null>(null);
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-4xl font-bold text-green-800 mb-4">
+          <h2 className="text-4xl font-bold text-primary mb-4">
             Our Gallery
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
@@ -207,7 +207,7 @@ const [selectedImage, setSelectedImage] = useState<Product | null>(null);
           viewport={{ once: true }}
           className="text-center mt-12"
         >
-          <Link href="/gallery">
+          {/* <Link href="/gallery">
             <Button
               size="lg"
               className="bg-green-700 hover:bg-green-800 text-white px-8 py-6 text-lg group"
@@ -215,7 +215,7 @@ const [selectedImage, setSelectedImage] = useState<Product | null>(null);
               View All Gallery
               <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
             </Button>
-          </Link>
+          </Link> */}
         </motion.div>
 
         {/* Lightbox Dialog */}

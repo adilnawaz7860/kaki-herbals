@@ -44,7 +44,7 @@ const faqData = [
 export const FAQSection = () => {
   return (
     <section className=" mx-auto px-4  bg-white border border-primary rounded-md py-16">
-      <h2 className="text-3xl font-bold text-green-700 mb-8 text-center">
+      <h2 className="text-3xl font-bold text-primary mb-8 text-center">
         FAQs - Frequently Asked Questions
       </h2>
       <Accordion type="single" collapsible className="space-y-4">

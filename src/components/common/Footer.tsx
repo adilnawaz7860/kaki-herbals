@@ -9,7 +9,7 @@ export const Footer = () => {
   const liStyles = "my-1.5";
 
   return (
-    <footer className="bg-primary text-gray-300 py-10 px-6 border-t border-primary">
+    <footer className="bg-primary mt-12 text-gray-300 py-10 px-6 border-t border-primary">
       <div className="max-w-screen-xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
         {/* 1️⃣ Policies Section */}
         <div>

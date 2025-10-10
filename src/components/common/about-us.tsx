@@ -13,10 +13,12 @@ import {
 } from "@/components/ui/dialog";
 import { Users, MapPin, Package, Award, MailCheck, ArrowBigDown, ArrowBigUp } from "lucide-react";
 import { motion, useInView, useMotionValue, useSpring } from "framer-motion";
+import { useRouter } from "next/navigation";
 
 
 export const AboutInquirySection = () => {
   const [open, setOpen] = useState(false);
+  const router = useRouter();
 
   const AnimatedCounter = ({ value, suffix = "" }: { value: number; suffix?: string }) => {
   const ref = useRef(null);
@@ -82,7 +84,7 @@ const stats = [
         {/* Left Side: About + Stats */}
         <div className="space-y-8">
           <div>
-            <h2 className="text-3xl text-green-800 font-bold mb-4">
+            <h2 className="text-3xl text-primary font-bold mb-4">
               Best Ayurvedic Medicine Company in India
             </h2>
             <p className="text-gray-700 leading-relaxed">
@@ -97,6 +99,7 @@ const stats = [
             <div className="flex flex-col md:flex-row justify-start items-start mt-4 gap-4">
                 <Button
               variant="default"
+              onClick={() => router.push("/about")}
               className="bg-primary gap-2 hover:bg-green-800"
             >
                 <ArrowBigUp className="w-4 h-4"/>
@@ -110,7 +113,7 @@ const stats = [
                 </DialogTrigger>
                 <DialogContent className="sm:max-w-[500px] bg-white">
                   <DialogHeader>
-                    <DialogTitle className="text-2xl text-green-700 text-center">
+                    <DialogTitle className="text-2xl text-primary text-center">
                       Inquiry Form
                     </DialogTitle>
                   </DialogHeader>
