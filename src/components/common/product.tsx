@@ -47,7 +47,7 @@ const products = [
     title: "Joint Heed Powder",
     category: "Personal Care",
     image: "/images/product5.jpeg",
-    description: "Strengthens roots and promotes natural hair growth.",
+    description: "Strengthens roots and promotes natural hair.",
     price: "₹549",
   },
 //   {
@@ -80,10 +80,10 @@ export default function ProductPage() {
 
       {/* Products Grid */}
       <section className="py-16 bg-white">
-        <div className="container mx-auto px-6">
+        <div className="container mx-auto">
           <motion.div
             layout
-            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8"
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4"
           >
             <AnimatePresence mode="popLayout">
               {products.map((product) => (
@@ -96,7 +96,7 @@ export default function ProductPage() {
                   transition={{ duration: 0.4 }}
                   whileHover={{ y: -8 }}
                 >
-                  <Card className="overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 group">
+                  <Card className="overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 group min-h-[500px]">
                     <div
                       className="relative h-64 w-full cursor-pointer"
                       onClick={() => setSelectedImage(product)}

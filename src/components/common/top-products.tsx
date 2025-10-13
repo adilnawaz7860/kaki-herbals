@@ -35,7 +35,7 @@ const products = [
     title: "Digetol Powder",
     category: "Wellness",
     image: "/images/product3.jpeg",
-    description: "Enhances digestion and improves appetite naturally.",
+    description: "Enhances digestion and improves appetite.",
     price: "₹299",
   },
   {
@@ -51,7 +51,7 @@ const products = [
     title: "Joint Heed Powder",
     category: "Personal Care",
     image: "/images/product5.jpeg",
-    description: "Strengthens roots and promotes natural hair growth.",
+    description: "Strengthens roots and promotes natural hair.",
     price: "₹549",
   },
 //   {
@@ -113,7 +113,7 @@ export default function ProductPage() {
         {/* Product Grid */}
         <motion.div
           layout
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4"
         >
           <AnimatePresence mode="popLayout">
             {products.map((product, index) => (
@@ -126,7 +126,7 @@ export default function ProductPage() {
                 transition={{ duration: 0.4 }}
                 whileHover={{ y: -8 }}
               >
-                <Card className="overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 group">
+                <Card className="overflow-hidden min-h-[458px] shadow-lg hover:shadow-2xl transition-all duration-300 group">
                   <div
                     className="relative h-64 w-full cursor-pointer"
                   >
