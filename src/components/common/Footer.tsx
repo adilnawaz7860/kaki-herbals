@@ -54,9 +54,9 @@ export const Footer = () => {
         <div>
           <h2 className="text-white font-semibold mb-4">Address</h2>
           <address className="not-italic text-sm leading-relaxed text-gray-300">
-            Kaki Herbals Pvt. Ltd. <br />
-            Lucknow , U.P. <br />
-            <span className="block mt-2">Phone: +91 98765 43210</span>
+            1536/1/1054 ΜADEHGANJ KHADRA NEAR AWADH EDUCATIONAL ACADEMY INTER COLLEGE SITAPUR ROAD  <br />
+            Lucknow , U.P. ,226020 <br />
+            <span className="block mt-2">Phone: +91 8707560361</span>
             <span className="block">Email: kakiherbals@gmail.com</span>
           </address>
         </div>
@@ -66,20 +66,20 @@ export const Footer = () => {
           <h2 className="text-white font-semibold mb-4">Follow Us</h2>
           <div className="flex gap-4">
             <Link
-              href="https://facebook.com"
+                href="https://www.facebook.com/share/19x5KmuXLv"
               target="_blank"
               className="p-2 bg-green-800 hover:bg-green-700 rounded-full"
             >
               <Facebook size={20} />
             </Link>
             <Link
-              href="https://instagram.com"
+               href="https://www.instagram.com/kakiherbals/?igsh=OHI5OTBwM24xaGpq#"
               target="_blank"
               className="p-2 bg-green-800 hover:bg-green-700 rounded-full"
             >
               <Instagram size={20} />
             </Link>
-            <Link
+            {/* <Link
               href="https://linkedin.com"
               target="_blank"
               className="p-2 bg-green-800 hover:bg-green-700 rounded-full"
@@ -92,7 +92,7 @@ export const Footer = () => {
               className="p-2 bg-green-800 hover:bg-green-700 rounded-full"
             >
               <Twitter size={20} />
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>

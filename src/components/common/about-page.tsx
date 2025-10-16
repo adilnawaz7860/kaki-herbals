@@ -34,8 +34,7 @@ const AboutUS = () => {
         transition={{ duration: 0.6 }}
         className="text-3xl md:text-4xl font-bold text-[#235d00] mb-6 text-center"
       >
-        Ayurvedic and Unani Company in India – kaki herbals Pvt. Ltd
-      </motion.h1>
+   Best Herbal (Unani) Medicine Company in India      </motion.h1>
 
       <motion.p
         initial={{ opacity: 0 }}
@@ -43,10 +42,9 @@ const AboutUS = () => {
         transition={{ delay: 0.2 }}
         className="text-gray-700 leading-relaxed mb-8 text-center"
       >
-        Established in January 2015, <strong>kaki herbals Pvt. Ltd.</strong> is a
-        trusted name in Ayurvedic and Unani healthcare. We are dedicated to reviving
-        and modernizing traditional systems of treatment with time-tested remedies for
-        modern wellness.
+    
+
+kaki herbals is proudly recognized as the Best Herbal (Unani)medicine company in India, committed to giving natural and effective herbal solutions. With a diverse portfolio of more than 70 Unani products, we focus on quality, purity, and results. Our products are based on ancient knowledge mixed with modern science, addressing various health requirements-from  immunity and digestion to Heart Care, Liver Care, joint care,Hair Care  and overall wellness.
       </motion.p>
 
       {/* --- Table of Contents Accordion --- */}

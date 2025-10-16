@@ -19,23 +19,16 @@ export const SubNavbar = ({ address }: SubNavbarProps) => {
         {/* Right: Social media icons */}
         <div className="flex items-center gap-4">
           <a
-            href="https://facebook.com"
+            href="https://www.facebook.com/share/19x5KmuXLv"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-gray-400 transition-colors"
           >
             <Facebook size={20} />
           </a>
+          
           <a
-            href="https://twitter.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-gray-400 transition-colors"
-          >
-            <Twitter size={20} />
-          </a>
-          <a
-            href="https://instagram.com"
+            href="https://www.instagram.com/kakiherbals/?igsh=OHI5OTBwM24xaGpq#"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-gray-400 transition-colors"

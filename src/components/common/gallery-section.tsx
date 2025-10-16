@@ -120,7 +120,7 @@ const [selectedImage, setSelectedImage] = useState<Product | null>(null);
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
             Explore our world-class facilities, quality products, and commitment
-            to excellence in Ayurvedic healthcare
+            to excellence in Herbal (Unani) healthcare.
           </p>
         </motion.div>
 

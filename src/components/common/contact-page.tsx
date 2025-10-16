@@ -21,6 +21,7 @@ import {
   Instagram,
   Youtube,
   Linkedin,
+  PhoneCall,
 } from "lucide-react";
 import { motion } from "framer-motion";
 
@@ -36,16 +37,16 @@ const ContactUs = () => {
         initial="hidden"
         animate="show"
         variants={fadeUp}
-        className="text-3xl md:text-4xl font-bold text-[#235d00] mb-6 text-center"
+        className="text-3xl md:text-4xl font-bold text-[#235d00] text-center  flex justify-center items-center gap-4 mb-6 text-center"
       >
-        📞 Contact Kaki Herbals Pvt. Ltd.
+        <PhoneCall height={30} width={30}/> Contact Kaki Herbals Pvt. Ltd.
       </motion.h1>
 
       {/* Table of Contents */}
-      <Accordion type="single" collapsible className="mb-8">
+      <Accordion type="single" collapsible className="w-full border border-[#235d00]/30 rounded-md mb-8 shadow-sm">
         <AccordionItem value="toc">
           <AccordionTrigger className="text-lg font-semibold text-[#235d00]">
-            Table of Contents
+           📜 Table of Contents
           </AccordionTrigger>
           <AccordionContent>
             <ul className="list-disc pl-6 space-y-1 text-gray-700">
@@ -75,8 +76,8 @@ const ContactUs = () => {
             <MapPin className="w-5 h-5 text-[#235d00]" /> Our Registered Office
           </h2>
           <p>
-            Kaki Herbals Pvt. Ltd. <br />
-            Kazijadgan, Ragib Nagar, Bijnor – 246725, Uttar Pradesh, India
+            Kaki Herbals. <br />
+           1536/1/1054 ΜADEHGANJ KHADRA NEAR AWADH EDUCATIONAL ACADEMY INTER COLLEGE SITAPUR ROAD Lucknow UP 226020
           </p>
         </div>
 
@@ -85,18 +86,17 @@ const ContactUs = () => {
           <h2 className="text-2xl font-semibold text-[#235d00] mb-2 flex items-center gap-2">
             <Phone className="w-5 h-5 text-[#235d00]" /> Contact Numbers
           </h2>
-          <p>Toll-Free Number: 1800 572 2015</p>
-          <p>WhatsApp Support: +91 7060725050</p>
+          <p>WhatsApp Support: +91 8707560361</p>
         </div>
 
         {/* Email */}
         <div>
           <h2 className="text-2xl font-semibold text-[#235d00] mb-2 flex items-center gap-2">
-            <Mail className="w-5 h-5 text-[#235d00]" /> Email Addresses
+            <Mail className="w-5 h-5 text-[#235d00]" /> Email Address
           </h2>
-          <p>Customer Support: info@kakiherbals.com</p>
-          <p>Business Inquiries: info@kakiherbals.com</p>
-          <p>General Queries: info@kakiherbals.com</p>
+          {/* <p>Customer Support: info@kakiherbals.com</p>
+          <p>Business Inquiries: info@kakiherbals.com</p> */}
+          <p>General Queries: kakiherbals@gmail.com</p>
         </div>
 
         {/* Business Hours */}
@@ -169,18 +169,19 @@ const ContactUs = () => {
             📲 Follow Us for Updates
           </h2>
           <div className="flex gap-4 flex-wrap">
-            <a href="#" className="flex items-center gap-1 text-[#235d00]">
+            <a href="https://www.facebook.com/share/19x5KmuXLv" className="flex items-center gap-1 text-[#235d00]">
               <Facebook size={18} /> Facebook
             </a>
-            <a href="#" className="flex items-center gap-1 text-[#235d00]">
+            <a             href="https://www.instagram.com/kakiherbals/?igsh=OHI5OTBwM24xaGpq#"
+ className="flex items-center gap-1 text-[#235d00]">
               <Instagram size={18} /> Instagram
             </a>
-            <a href="#" className="flex items-center gap-1 text-[#235d00]">
+            {/* <a href="#" className="flex items-center gap-1 text-[#235d00]">
               <Youtube size={18} /> YouTube
             </a>
             <a href="#" className="flex items-center gap-1 text-[#235d00]">
               <Linkedin size={18} /> LinkedIn
-            </a>
+            </a> */}
           </div>
         </div>
       </motion.div>

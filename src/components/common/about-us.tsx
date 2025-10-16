@@ -54,7 +54,7 @@ export const AboutInquirySection = () => {
 const stats = [
   {
     icon: Award,
-    value: 10,
+    value: 4,
     suffix: "+",
     label: "Years of Experience",
   },
@@ -72,7 +72,7 @@ const stats = [
   },
   {
     icon: Package,
-    value: 350,
+    value: 70,
     suffix: "+",
     label: "Products",
   },
@@ -85,16 +85,10 @@ const stats = [
         <div className="space-y-8">
           <div>
             <h2 className="text-3xl text-primary font-bold mb-4">
-              Best Ayurvedic Medicine Company in India
+              Best Herbal (Unani) Medicine Company in India.
             </h2>
-            <p className="text-gray-700 leading-relaxed">
-              kaki herbals is proudly recognized as the Best Ayurvedic
-              medicine company in India, committed to giving natural and
-              effective herbal solutions. With a diverse portfolio of more than
-              350 Ayurvedic and Unani products, we focus on quality, purity,
-              and results. Our products are based on ancient knowledge mixed
-              with modern science, addressing various health requirements—from
-              immunity and digestion to joint care and overall wellness.
+            <p className="text-gray-700 leading-relaxed capitalize">
+           kaki herbals is proudly recognized as the Best Herbal (Unani)medicine company in India, committed to giving natural and effective herbal solutions. With a diverse portfolio of more than 70 Unani products, we focus on quality, purity, and results. Our products are based on ancient knowledge mixed with modern science, addressing various health requirements-from  immunity and digestion to Heart Care, Liver Care, joint care,Hair Care  and overall wellness.
             </p>
             <div className="flex flex-col md:flex-row justify-start items-start mt-4 gap-4">
                 <Button

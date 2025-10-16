@@ -13,7 +13,7 @@ const whyChooseCards = [
   {
     title: "Wide Range of Products",
     description:
-      "Over 350+ Ayurvedic and Unani products catering to various health segments like digestion, immunity, women's wellness, and more.",
+      "Over 700+ Herbal and Unani products catering to various health segments like digestion, immunity, women's wellness, and more.",
     icon: <Shield size={32} />,
   },
   {

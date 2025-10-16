@@ -32,7 +32,7 @@ export default async function RootLayout({
     <html lang="en">
       
         <body className={GeistSans.className}>
-                <SubNavbar address="Lucknow , U.P" />
+                <SubNavbar address="Address:1536/1/1054 ΜADEHGANJ KHADRA NEAR AWADH EDUCATIONAL ACADEMY INTER COLLEGE SITAPUR ROAD Lucknow UP 226020" />
 
           <Navbar
             session={session}

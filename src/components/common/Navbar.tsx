@@ -38,7 +38,7 @@ export const Navbar = ({ session, totalItemsCart, totalWishlists } : any) => {
           </svg>
         </button>
         <Link href="/">
-          <Image src="/images/adil.png" alt="Logo" width={60} height={60} className="object-cover" />
+          <Image src="/images/logo.jpeg" alt="Logo" width={60} height={60} className="object-cover" />
         </Link>
       </div>
 
