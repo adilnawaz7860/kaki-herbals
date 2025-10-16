@@ -55,7 +55,7 @@ const products = [
     title: "Joint Wariness Oil",
     category: "Personal Care",
     image: "/images/product8.jpg",
-    description: "Herbal formulations for your joint pain and arthritis.",
+    description: "Natural oil for quick relief from joint and muscle pain.",
     price: "₹549",
   },
 //   {
