@@ -8,6 +8,7 @@ import ProductSection from "@/components/common/top-products";
 import { CustomerTestimonials } from "@/components/common/customer-testimonials";
 import { FAQSection } from "@/components/common/faq-section";
 import { ExpertTestimonials } from "@/components/common/expert-testimonials";
+import FounderSection from "@/components/common/founder-section";
 
 const whyChooseCards = [
   {
@@ -67,16 +68,11 @@ const Home = () => {
   return (
     <section className="pt-14">
       <div className="space-y-12">
-        <HeroSection
-          imageSrc="/hero1.webp"
-          title="Welcome to E-Shop"
-          subtitle="Best deals on your favorite products"
-          ctaText="Shop Now"
-          ctaLink="/products"
-        />
+        <HeroSection images={["/hero1.jpeg", "/hero2.jpeg", "/hero3.jpeg" , "/hero4.jpeg" ,"/hero5.jpeg"]} />
         <div className="container mx-auto space-y-12">
           <AboutInquirySection />
         <GallerySection />
+        <FounderSection/>
         <WhyChooseSection cards={whyChooseCards} />
         <DistributionProcessSection cards={distributionCards} />
         <ProductSection />

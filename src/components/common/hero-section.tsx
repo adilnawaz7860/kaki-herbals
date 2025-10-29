@@ -1,52 +1,74 @@
 "use client";
 
+import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
-import Link from "next/link";
+import { useEffect, useState } from "react";
 
 interface HeroSectionProps {
-  imageSrc: string; // Path to image in public folder
-  title?: string;
-  subtitle?: string;
-  ctaText?: string;
-  ctaLink?: string;
+  images: string[]; // e.g. ["/hero1.jpeg", "/hero2.jpeg", "/hero3.jpeg"]
+  interval?: number; // slide duration (default 5s)
 }
 
-export const HeroSection = ({
-  imageSrc,
-  title,
-  subtitle,
-  ctaText,
-  ctaLink,
-}: HeroSectionProps) => {
-  return (
-    <section className="relative w-full h-[500px] lg:h-[600px]">
-      {/* Hero Image */}
-      <Image
-        src={imageSrc}
-        alt={title || "Hero Image"}
-        fill
-        className="object-cover"
-      />
+export const HeroSection = ({ images, interval = 5000 }: HeroSectionProps) => {
+  const [current, setCurrent] = useState(0);
 
-      {/* Overlay */}
-      {/* <div className="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-center px-4">
-        {title && (
-          <h1 className="text-3xl lg:text-5xl font-bold text-white mb-4">
-            {title}
-          </h1>
+  // ⏱️ Auto-slide logic
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % images.length);
+    }, interval);
+    return () => clearInterval(timer);
+  }, [images.length, interval]);
+
+  return (
+    <section
+      className="
+        relative w-full 
+        h-[250px] sm:h-[350px] md:h-[450px] lg:h-[550px] xl:h-[650px]
+        overflow-hidden rounded-2xl
+      "
+    >
+      <AnimatePresence>
+        {images.map(
+          (img, index) =>
+            index === current && (
+              <motion.div
+                key={img}
+                className="absolute inset-0 w-full h-full"
+                initial={{ opacity: 0, scale: 1.05 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 1.05 }}
+                transition={{ duration: 1 }}
+              >
+                <Image
+                  src={img.startsWith("/") ? img : `/${img}`}
+                  alt={`Hero ${index + 1}`}
+                  fill
+                  priority={index === 0}
+                  className="object-cover object-center"
+                  sizes="(max-width: 640px) 100vw,
+                         (max-width: 1024px) 100vw,
+                         100vw"
+                />
+              </motion.div>
+            )
         )}
-        {subtitle && (
-          <p className="text-white text-lg lg:text-2xl mb-6">{subtitle}</p>
-        )}
-        {ctaText && ctaLink && (
-          <Link
-            href={ctaLink}
-            className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md text-lg transition"
-          >
-            {ctaText}
-          </Link>
-        )}
-      </div> */}
+      </AnimatePresence>
+
+      {/* Navigation dots */}
+      <div className="absolute bottom-4 sm:bottom-6 flex justify-center w-full gap-2 sm:gap-3">
+        {images.map((_, i) => (
+          <button
+            key={i}
+            onClick={() => setCurrent(i)}
+            className={`w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full transition-all duration-300 ${
+              current === i
+                ? "bg-white scale-110 shadow-md"
+                : "bg-gray-400/70 hover:bg-white/80"
+            }`}
+          />
+        ))}
+      </div>
     </section>
   );
 };

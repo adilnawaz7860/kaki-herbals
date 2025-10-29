@@ -4,43 +4,86 @@ import { motion, AnimatePresence } from "framer-motion";
 
 
 export function ExpertTestimonials() {
-  const testimonials = [
-    {
-      quote:
-        "I recommend Helth O Rin C and Ytacare Syrup to my patients. These are safe, effective, and give good results. My patients are happy with them.",
-      name: "Dr. Attiq Ahmad",
-      designation: "B.U.M.S, Consultant",
-      src: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=3560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-    {
-      quote:
-        "I recommend Ayurvedic and Unani products like Nari Sudha Amrit, Systorin and Supari Pak for women’s health. They are natural, safe, and work well for my patients.",
-      name: "Dr. Shirin",
-      designation: "B.U.M.S, Gynaecologists",
-      src: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-    {
-      quote:
-        "This solution has significantly improved our team's productivity. The intuitive interface makes complex tasks simple.",
-      name: "Hakeem Tauheed Ji",
-      designation: "BUMS, Consultant",
-      src: "https://images.unsplash.com/photo-1623582854588-d60de57fa33f?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-    {
-      quote:
-        "Products like Suzosha, Prostayork, and Shamdhu Amrit have become a regular part of my practice. They work well and my patients often share positive feedback",
-      name: "Dr. Isnan",
-      designation: "B.U.M.S, Consultant",
-      src: "https://images.unsplash.com/photo-1636041293178-808a6762ab39?q=80&w=3464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-    {
-      quote:
-        "I have been prescribing Kaki Herbals' products to my patients and have seen very good results. The medicines are effective, and my patients are satisfied with the outcomes. I truly trust the quality of these products.",
-      name: "Lisa Thompson",
-      designation: "VP of Technology at FutureNet",
-      src: "https://images.unsplash.com/photo-1624561172888-ac93c696e10c?q=80&w=2592&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-  ];
+const testimonials = [
+  {
+    quote:
+      "I often recommend Helth O Rin C and Ytacare Syrup to my patients. These herbal formulations from Kaki Herbals are safe, effective, and deliver consistent results. My patients report noticeable improvements in their health.",
+    name: "Dr. Ravi Srivastav",
+    designation: "B.U.M.S, Consultant",
+    src: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=3560&auto=format&fit=crop",
+  },
+  {
+    quote:
+      "For women’s wellness, I frequently suggest Nari Sudha Amrit, Systorin, and Supari Pak by Kaki Herbals. These Unani and Ayurvedic remedies are natural, hormone-balancing, and well-tolerated by my patients.",
+    name: "Dr. Mohammad Muzaffar Husain",
+    designation: "B.U.M.S, Gynaecologist",
+    src: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=3540&auto=format&fit=crop",
+  },
+  {
+    quote:
+      "Herbal formulations like Livrin and Gashtorin have proven highly effective for digestive and liver health. I appreciate Kaki Herbals’ commitment to quality and traditional healing principles.",
+    name: "Dr. Kashan Abbas",
+    designation: "B.U.M.S, Consultant",
+    src: "https://images.unsplash.com/photo-1623582854588-d60de57fa33f?q=80&w=3540&auto=format&fit=crop",
+  },
+  {
+    quote:
+      "Products such as Suzosha, Prostayork, and Shamdhu Amrit have become trusted remedies in my practice. Patients consistently share positive feedback on their effectiveness and purity.",
+    name: "Dr. Shamshad Ahmad",
+    designation: "B.U.M.S, Consultant",
+    src: "https://images.unsplash.com/photo-1636041293178-808a6762ab39?q=80&w=3464&auto=format&fit=crop",
+  },
+  {
+    quote:
+      "I’ve been prescribing Kaki Herbals’ natural products for various conditions — from immunity to reproductive health. The quality and consistency are excellent, and patients notice results without side effects.",
+    name: "Dr. Mahaboob Alam Beg",
+    designation: "B.U.M.S, Herbal Consultant",
+    src: "https://images.unsplash.com/photo-1624561172888-ac93c696e10c?q=80&w=2592&auto=format&fit=crop",
+  },
+  {
+    quote:
+      "Kaki Herbals’ formulations combine traditional wisdom with modern standards. Products like Cardiorin and Diabocare have shown promising outcomes in managing chronic conditions naturally.",
+    name: "Dr. Asim Rayeen",
+    designation: "B.U.M.S, Ayurvedic Practitioner",
+    src: "https://images.unsplash.com/photo-1624561172888-ac93c696e10c?q=80&w=2592&auto=format&fit=crop",
+  },
+  {
+    quote:
+      "I recommend herbal products from Kaki Herbals to patients seeking natural alternatives. Their formulations are clean, authentic, and effective in restoring balance and vitality.",
+    name: "Dr. Chand Babu",
+    designation: "B.U.M.S, Herbal Medicine Specialist",
+    src: "https://images.unsplash.com/photo-1624561172888-ac93c696e10c?q=80&w=2592&auto=format&fit=crop",
+  },
+  {
+    quote:
+      "As a practitioner, I value how Kaki Herbals preserves the integrity of traditional medicine. Their male wellness range, including Prostayork, has delivered excellent clinical results.",
+    name: "Dr. Mohammad Salman Khan",
+    designation: "B.U.M.S, Consultant Physician",
+    src: "https://images.unsplash.com/photo-1624561172888-ac93c696e10c?q=80&w=2592&auto=format&fit=crop",
+  },
+  {
+    quote:
+      "I’ve observed remarkable improvements in patients using Kaki Herbals’ formulations for joint pain and energy restoration. Their approach reflects true Unani and Ayurvedic excellence.",
+    name: "Dr. Ahmad Raza Khan",
+    designation: "B.U.M.S, Herbal Consultant",
+    src: "https://images.unsplash.com/photo-1624561172888-ac93c696e10c?q=80&w=2592&auto=format&fit=crop",
+  },
+  {
+    quote:
+      "Kaki Herbals’ medicines stand out for their purity and effectiveness. My patients have benefited immensely from their herbal tonics and immunity boosters.",
+    name: "Dr. Intizar Ali",
+    designation: "B.U.M.S, Herbal Medicine Consultant",
+    src: "https://images.unsplash.com/photo-1624561172888-ac93c696e10c?q=80&w=2592&auto=format&fit=crop",
+  },
+  {
+    quote:
+      "I trust Kaki Herbals because their products are scientifically prepared yet rooted in classical Unani and Ayurvedic principles. They consistently deliver safe, natural healing.",
+    name: "Dr. Aslam Khan",
+    designation: "B.U.M.S, Consultant",
+    src: "https://images.unsplash.com/photo-1624561172888-ac93c696e10c?q=80&w=2592&auto=format&fit=crop",
+  },
+];
+
   return (    <section className="py-12  bg-white border border-primary rounded-md">
 
     <div className="container mx-auto px-6">
@@ -55,7 +98,7 @@ export function ExpertTestimonials() {
                 </h2>
                
               </motion.div>
-  <AnimatedTestimonials isExpert={true} testimonials={testimonials} />
+  <AnimatedTestimonials isExpert={false} testimonials={testimonials} />
   </div>
   </section>);
 }
