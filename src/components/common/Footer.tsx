@@ -56,7 +56,7 @@ export const Footer = () => {
           <address className="not-italic text-sm leading-relaxed text-gray-300">
             1536/1/1054 ΜADEHGANJ KHADRA NEAR AWADH EDUCATIONAL ACADEMY INTER COLLEGE SITAPUR ROAD  <br />
             Lucknow , U.P. ,226020 <br />
-            <span className="block mt-2">Phone: +91 8707560361</span>
+            <span className="block mt-2">Phone: +91 9450094401</span>
             <span className="block">Email: kakiherbals@gmail.com</span>
           </address>
         </div>

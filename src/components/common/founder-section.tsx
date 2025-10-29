@@ -17,7 +17,7 @@ export default function FounderSection() {
       >
         <div className="w-56 h-56 md:w-72 md:h-72 lg:w-80 lg:h-80 rounded-full border-[6px] border-primary overflow-hidden shadow-xl mx-auto">
           <Image
-            src="/founder.jpg" // 🟢 your founder photo in /public/founder.jpg
+            src="/images/founder.jpeg" // 🟢 your founder photo in /public/founder.jpg
             alt="Founder - Kaki Herbals"
             width={400}
             height={400}
@@ -38,7 +38,7 @@ export default function FounderSection() {
           About Our Founder
         </h2>
         <p className="text-gray-700 leading-relaxed text-base md:text-lg mb-4">
-          <strong>Hakim Mohammad Kaki</strong>, the visionary founder of{" "}
+          <strong>Doctor Mohammad Adil</strong>, the visionary founder of{" "}
           <span className="text-primary font-semibold">Kaki Herbals</span>,
           has dedicated his life to reviving the ancient wisdom of Unani and
           Ayurvedic medicine. With a deep belief in the healing power of nature,
@@ -54,9 +54,9 @@ export default function FounderSection() {
 
         <div className="mt-6">
           <p className="text-primary font-semibold text-lg">
-            — Hakim Mohammad Kaki
+            —  Doctor Mohammad Adil
           </p>
-          <p className="text-gray-500 text-sm">Founder, Kaki Herbals</p>
+          <p className="text-gray-500 text-sm">Founder, Kaki Herbals ( B.U.M.S.)</p>
         </div>
       </motion.div>
     </section>
